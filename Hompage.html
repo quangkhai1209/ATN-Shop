@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<style >
+	body{
+		background: url(Images/picture4.jpg);
+	}
+	.wrap{
+		border-radius: 10px;
+		width: 450px;
+		margin: auto;
+		background: #bf00bf;
+		margin-top: 100px;
+		padding: 5px;
+	}
+	form{
+		padding: 10px;
+		font-family: arial;
+		border:1px dotted white;
+	}
+	h2{
+		width: 60%;
+		text-align: center;
+		background: orange;
+		color: white;
+		padding: 10px;
+		border-radius: 10px;
+		margin-left: 77px;
+	}
+	input{
+		padding: 10px;
+		margin: 5px;
+		border-radius: 5px;
+		border:none;
+	}
+	input[type=text], input[type=email], input[type=number],
+	input[type=password]{width: 90%;}
+	input[type=submit]{
+		width: 40%;
+		background: orange;
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: bold;
+		color:white;
+		margin-left: 130px;
+	}
+	input[type=submit]:hover{ background: yellow; }
+	select{
+		padding:10px;
+		width: 32%;
+		border-radius: 5px;
+	}
+</style>
+<body>
+	<div class="wrap">
+		<form>
+			<h2>Registration</h2>
+			<input type="text" name="yourname" placeholder="Your Name">
+			<input type="email" name="email" placeholder="Your Email">
+			<input type="number" name="number" placeholder="Mobile Number">
+			<input type="password" name="password" placeholder="Password">
+			<input type="password" name="conformpassword" placeholder="Conform Password">
+			<br>
+			<br>
+			<span style="font-size:18px"> Date of Birth</span>
+			<br>
+			<select name="DOBmonth">
+				<option>Month</option>
+				<option value="january">January</option>
+				<option value="february">February</option>
+			</select>
+			<select name="DOBday">
+				<option>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<select name="DOByear">
+				<option>Year</option>
+				<option value="2000">2000</option>
+				<option value="1990">1990</option>
+			</select>
+			<br>
+			<br>
+			<input type="radio" name="male" value="male">Male
+			<input type="radio" name="female" value="female"> Female
+			<br>
+			<input type="checkbox"> I gree to the terms of use
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
